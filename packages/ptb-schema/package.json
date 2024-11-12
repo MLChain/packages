@@ -1,0 +1,25 @@
+{
+  "name": "@mlchain/ptb-schema",
+  "version": "0.0.6",
+  "main": "./dist/index.js",
+  "author": "KhulnaSoft, Ltd",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --build",
+    "test": "vitest",
+    "check:type": "tsc --noEmit",
+    "clean": "rimraf ./dist && rimraf ./node_modules"
+  },
+  "types": "./dist/index.d.ts",
+  "devDependencies": {
+    "vitest": "^1.3.1"
+  },
+  "dependencies": {
+    "protobufjs": "7.4.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "pnpm": "9.11.0"
+  },
+  "packageManager": "pnpm@9.11.0"
+}

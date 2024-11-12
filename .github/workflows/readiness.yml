@@ -1,0 +1,37 @@
+name: Readiness
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'readiness/**'
+
+  pull_request:
+    paths:
+      - 'readiness/**'
+
+  workflow_dispatch: {}
+
+defaults:
+  run:
+    working-directory: ./readiness
+
+jobs:
+  readiness:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3.0.0
+        with:
+          version: 9.11.0
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build
+      - run: pnpm check:type
+      - name: Publish
+        if: github.ref == 'refs/heads/master' || github.event_name == 'workflow_dispatch'
+        uses: mlchain/gh-actions/publish-if-not-exists@master
+        with:
+          path: './readiness'
+          token: '${{ secrets.NPM_ACCESS_TOKEN }}'

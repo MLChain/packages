@@ -1,0 +1,17 @@
+* @mlchain/cloud-services
+
+const @mlchain/cloud-services
+entities @franklevasseur @mlchain/cloud-services
+depsynky @franklevasseur @mlchain/cloud-services
+es-node @franklevasseur @mlchain/cloud-services
+jex @franklevasseur @mlchain/cloud-services
+log4bot @franklevasseur @mlchain/cloud-services
+opapi @michaelmass @franklevasseur @mlchain/cloud-services
+promex @michaelmass @mlchain/cloud-services
+ptb-schema @franklevasseur @mlchain/cloud-services
+readiness @franklevasseur @mlchain/cloud-services
+trail @michaelmass @mlchain/cloud-services
+tunnel @franklevasseur @mlchain/cloud-services
+verel @franklevasseur @mlchain/cloud-services
+yargs-extra @franklevasseur @mlchain/cloud-services
+zui @franklevasseur @mlchain/cloud-services

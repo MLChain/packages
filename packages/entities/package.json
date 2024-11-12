@@ -1,0 +1,40 @@
+{
+  "name": "@mlchain/entities",
+  "version": "0.0.15",
+  "description": "Mlchain Entities Extractor",
+  "main": "./dist/node/index.js",
+  "module": "./dist/web/index.js",
+  "types": "./dist/types/index.d.ts",
+  "scripts": {
+    "check:type": "tsc --noEmit",
+    "build": "pnpm run build:node && pnpm run build:web && pnpm run build:type",
+    "build:type": "tsc -p tsconfig.build.json",
+    "build:node": "ts-node -T ./build.ts nodejs",
+    "build:web": "ts-node -T ./build.ts web",
+    "test": "pnpm run test:unit && pnpm run test:e2e && pnpm run test:rust",
+    "test:unit": "pnpm vitest --run",
+    "test:e2e": "ts-node -T ./e2e/node.ts && ts-node -T ./e2e/browser/index.ts",
+    "test:rust": "cargo test"
+  },
+  "dependencies": {
+    "browser-or-node": "^2.1.1",
+    "lodash": "^4.17.19"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.195",
+    "@types/node": "^20.2.1",
+    "esbuild": "^0.24.0",
+    "puppeteer": "^22.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "5.6.3",
+    "vitest": "1.6.0",
+    "wasm-pack": "^0.13.0"
+  },
+  "author": "KhulnaSoft, Ltd",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0",
+    "pnpm": "9.11.0"
+  },
+  "packageManager": "pnpm@9.11.0"
+}

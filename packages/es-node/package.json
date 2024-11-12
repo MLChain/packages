@@ -1,0 +1,28 @@
+{
+  "name": "@mlchain/es-node",
+  "version": "0.0.9",
+  "description": "",
+  "main": "dist/index.js",
+  "bin": {
+    "es-node": "bin.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "check:type": "tsc --noEmit",
+    "start": "node dist/index.js"
+  },
+  "author": "KhulnaSoft, Ltd",
+  "license": "MIT",
+  "dependencies": {
+    "esbuild": "^0.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "typescript": "5.6.3"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "pnpm": "9.11.0"
+  },
+  "packageManager": "pnpm@9.11.0"
+}
