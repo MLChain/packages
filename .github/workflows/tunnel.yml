@@ -15,7 +15,7 @@ on:
 
 defaults:
   run:
-    working-directory: ./tunnel
+    working-directory: ./packages/tunnel
 
 jobs:
   tunnel:

@@ -15,7 +15,7 @@ on:
 
 defaults:
   run:
-    working-directory: ./log4bot
+    working-directory: ./packages/log4bot
 
 jobs:
   log4bot:

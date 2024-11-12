@@ -15,7 +15,7 @@ on:
 
 defaults:
   run:
-    working-directory: ./zui
+    working-directory: ./packages/zui
 
 jobs:
   zui:

@@ -15,7 +15,7 @@ on:
 
 defaults:
   run:
-    working-directory: ./jex
+    working-directory: ./packages/jex
 
 jobs:
   jex:

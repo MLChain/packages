@@ -15,7 +15,7 @@ on:
 
 defaults:
   run:
-    working-directory: ./genenv
+    working-directory: ./packages/genenv
 
 jobs:
   genenv:

@@ -15,7 +15,7 @@ on:
 
 defaults:
   run:
-    working-directory: ./verel
+    working-directory: ./packages/verel
 
 jobs:
   verel:

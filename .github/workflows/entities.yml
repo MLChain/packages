@@ -15,7 +15,7 @@ on:
 
 defaults:
   run:
-    working-directory: ./entities
+    working-directory: ./packages/entities
 
 jobs:
   entities:
