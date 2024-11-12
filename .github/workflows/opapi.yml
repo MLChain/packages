@@ -5,11 +5,11 @@ on:
     branches:
       - master
     paths:
-      - 'opapi/**'
+      - 'packages/opapi/**'
 
   pull_request:
     paths:
-      - 'opapi/**'
+      - 'packages/opapi/**'
 
   workflow_dispatch: {}
 

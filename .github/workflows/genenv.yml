@@ -5,11 +5,11 @@ on:
     branches:
       - master
     paths:
-      - 'genenv/**'
+      - 'packages/genenv/**'
 
   pull_request:
     paths:
-      - 'genenv/**'
+      - 'packages/genenv/**'
 
   workflow_dispatch: {}
 

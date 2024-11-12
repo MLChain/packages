@@ -5,11 +5,11 @@ on:
     branches:
       - master
     paths:
-      - 'entities/**'
+      - 'packages/entities/**'
 
   pull_request:
     paths:
-      - 'entities/**'
+      - 'packages/entities/**'
 
   workflow_dispatch: {}
 

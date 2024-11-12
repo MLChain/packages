@@ -5,11 +5,11 @@ on:
     branches:
       - master
     paths:
-      - 'depsynky/**'
+      - 'packages/depsynky/**'
 
   pull_request:
     paths:
-      - 'depsynky/**'
+      - 'packages/depsynky/**'
 
   workflow_dispatch: {}
 

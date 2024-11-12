@@ -5,11 +5,11 @@ on:
     branches:
       - master
     paths:
-      - 'jex/**'
+      - 'packages/jex/**'
 
   pull_request:
     paths:
-      - 'jex/**'
+      - 'packages/jex/**'
 
   workflow_dispatch: {}
 

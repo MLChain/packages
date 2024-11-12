@@ -5,11 +5,11 @@ on:
     branches:
       - master
     paths:
-      - 'yargs-extra/**'
+      - 'packages/yargs-extra/**'
 
   pull_request:
     paths:
-      - 'yargs-extra/**'
+      - 'packages/yargs-extra/**'
 
   workflow_dispatch: {}
 

@@ -5,11 +5,11 @@ on:
     branches:
       - master
     paths:
-      - 'es-node/**'
+      - 'packages/es-node/**'
 
   pull_request:
     paths:
-      - 'es-node/**'
+      - 'packages/es-node/**'
 
   workflow_dispatch: {}
 

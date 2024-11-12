@@ -5,11 +5,11 @@ on:
     branches:
       - master
     paths:
-      - 'log4bot/**'
+      - 'packages/log4bot/**'
 
   pull_request:
     paths:
-      - 'log4bot/**'
+      - 'packages/log4bot/**'
 
   workflow_dispatch: {}
 

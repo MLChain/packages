@@ -5,11 +5,11 @@ on:
     branches:
       - master
     paths:
-      - 'readiness/**'
+      - 'packages/readiness/**'
 
   pull_request:
     paths:
-      - 'readiness/**'
+      - 'packages/readiness/**'
 
   workflow_dispatch: {}
 

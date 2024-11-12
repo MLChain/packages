@@ -5,11 +5,11 @@ on:
     branches:
       - master
     paths:
-      - 'const/**'
+      - 'packages/const/**'
 
   pull_request:
     paths:
-      - 'const/**'
+      - 'packages/const/**'
 
   workflow_dispatch: {}
 

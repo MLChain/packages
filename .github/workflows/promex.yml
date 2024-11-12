@@ -5,11 +5,11 @@ on:
     branches:
       - master
     paths:
-      - 'promex/**'
+      - 'packages/promex/**'
 
   pull_request:
     paths:
-      - 'promex/**'
+      - 'packages/promex/**'
 
   workflow_dispatch: {}
 

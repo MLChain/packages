@@ -5,11 +5,11 @@ on:
     branches:
       - master
     paths:
-      - 'verel/**'
+      - 'packages/verel/**'
 
   pull_request:
     paths:
-      - 'verel/**'
+      - 'packages/verel/**'
 
   workflow_dispatch: {}
 

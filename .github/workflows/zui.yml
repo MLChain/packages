@@ -5,11 +5,11 @@ on:
     branches:
       - master
     paths:
-      - 'zui/**'
+      - 'packages/zui/**'
 
   pull_request:
     paths:
-      - 'zui/**'
+      - 'packages/zui/**'
 
   workflow_dispatch: {}
 
